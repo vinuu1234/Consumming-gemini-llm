@@ -21,6 +21,7 @@ public class GeminiController {
 
     @GetMapping
     public ResponseEntity<String> getGeminiReply(@RequestParam String prompt) {
+    	System.out.println("app started !!!");
         return ResponseEntity.ok(geminiService.getGeminiResponse(prompt));
     }
 }
