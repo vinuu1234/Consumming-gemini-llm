@@ -43,6 +43,7 @@ public class GeminiService {
     }
 
     public String getGeminiResponse(String prompt) {
+    	System.out.println("Processing started !!!");
         validatePrompt(prompt); // Validate prompt first
         
         GeminiRequest request = buildRequest(prompt);
